@@ -8,7 +8,7 @@ const Input = ({title, name, input, inputChange, disabled}) => {
 
             {name === 'description' && disabled ?
                 <span className={'px-3 py-1.5 rounded-lg bg-blue-500'}>
-                <a href={input} target={'_blank'}>{input}</a>
+                <a className={'break-words'} href={input} target={'_blank'}>{input}</a>
                 </span> :
 
                 <input className={'px-3 py-1.5 rounded-lg bg-blue-500 outline-none'} name={name} value={input}
